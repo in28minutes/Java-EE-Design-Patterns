@@ -34,11 +34,21 @@
 
 #View Helper
 - Tag Libraries used for Date Formatting
+- Spring Tag Libraries for Form Binding
 
 #Intercepting Filter
 - AOP
 - Logging
 - authentication filters , logging & auditing , Image conversion , data compression , encryption
+
+
+
+#Service Locator  (With Spring - these kind of things have become obselete)
+- Is a Singleton that is used to reuse code performing the JNDI lookup . 
+- Abstracts complexity 
+- Provides uniform service access to Clients 
+- Improves performance 
+- Sometimes referred to as the EJBHomeFactory ( EJB design patterns ) .
 
 #Session Facade
 - The session bean will probably interact with two or more entity beans
@@ -51,6 +61,10 @@
 - Code needed to access them might need understand the fact that the service is distributed, there-by, will be more complex. Example, EJB Remote Methods from time before.
 - Plain Java classes that hide EJB API complexity by encapsulating code required to discover, delegate to and recover from invocations on the session and message façade EJB layers.
 - Use on large projects where the web team is separate from the EJB team .
+
+# Service Activator
+- Some long-running use cases take long time. Instead of blocking the users, we can run these asynchronously
+- JMS Can be used
 
 #Data Transfer Object / Value Object
 - Typically created by a Session Facade
@@ -66,13 +80,6 @@
 - The DAO will help to hide details of access to the data source from the client. 
 - Promotes easier migration from one data source to another
 
-
-#Service Locator  (With Spring - these kind of things have become obselete)
-- Is a Singleton that is used to reuse code performing the JNDI lookup . 
-- Abstracts complexity 
-- Provides uniform service access to Clients 
-- Improves performance 
-- Sometimes referred to as the EJBHomeFactory ( EJB design patterns ) .
 
 
 #Value List Handler
