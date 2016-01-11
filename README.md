@@ -6,10 +6,23 @@
 - Decide if creating the course makes sense
 
 # Front Controller
+- Look at all incoming requests.
 - Mapping from String to the View.
+- DataBinding
 - Spring MVC - DispatcherServlet
 - Security - Spring MVC
 - Logging
+
+#Application Controller
+- Invoke business components.
+- Identify and redirect to the next view.
+
+#Context Object
+- Typically Presentation Tier is tightly coupled to the Servlet API - extensively using HttpServletRequest and HttpServletResponse . Page controllers cannot be reused outside Web Application context.
+- Increase the reusability of page controllers.
+- Use a context object to encapsulate and share form data without any protocol dependency.
+- Spring MVC uses ModelMap as the Context Object. This class serves as generic model holder for both Servlet and Portlet MVC, but is not tied to either of those.
+- Easier to Test
 
 #Composite View
 - Tiles and SiteMesh
