@@ -3,7 +3,7 @@
 ##Todo
 - Make it a very short course
 - Look at Santosh's book further
-- Decide if creating the course makes sense
+- Decide if creating the course makes sense. It does now!!
 
 # Front Controller
 - Look at all incoming requests.
