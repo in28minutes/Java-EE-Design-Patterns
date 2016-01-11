@@ -1,5 +1,10 @@
 # Java-EE-Design-Patterns
 
+##Todo
+- Make it a very short course
+- Look at Santosh's book further
+- Decide if creating the course makes sense
+
 # Front Controller
 - Mapping from String to the View.
 - Spring MVC - DispatcherServlet
